@@ -44,13 +44,3 @@ On Linux, sextant's GLFW needs the X11 and Wayland development headers from the 
 `libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libxext-dev libwayland-dev
 libxkbcommon-dev wayland-protocols` (Debian/Ubuntu names).
 
-## Releasing a new sextant version
-
-1. Tag the release in `sextant` (`vX.Y.Z`); `project(VERSION)` in its `CMakeLists.txt` must match.
-2. In `ports/sextant/vcpkg.json` set `"version"`; reset `"port-version"` if present.
-3. Fill in `SHA512` in `ports/sextant/portfile.cmake`: leave it `0`, run
-   `vcpkg install sextant --overlay-ports=ports`, and copy the hash from the error.
-4. `vcpkg format-manifest ports/sextant/vcpkg.json`
-5. Commit the port, then record it:
-   `vcpkg x-add-version sextant --x-builtin-ports-root=ports --x-builtin-registry-versions-dir=versions`,
-   and commit `versions/` in a second commit.
