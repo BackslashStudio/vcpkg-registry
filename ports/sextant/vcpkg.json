@@ -1,0 +1,39 @@
+{
+  "name": "sextant",
+  "version": "1.1.0",
+  "description": "Scientific plotting for C++20 with the low friction of matplotlib: interactive OpenGL windows, PNG and SVG output.",
+  "homepage": "https://github.com/BackslashStudio/sextant",
+  "license": "MIT",
+  "supports": "(windows & !uwp & !arm) | linux | osx",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "default-features": [
+    "freetype",
+    "png"
+  ],
+  "features": {
+    "freetype": {
+      "description": "Rasterize plot text with FreeType instead of stb_truetype",
+      "dependencies": [
+        {
+          "name": "freetype",
+          "default-features": false
+        }
+      ]
+    },
+    "png": {
+      "description": "Write PNG files with libpng instead of stb_image_write",
+      "dependencies": [
+        "libpng"
+      ]
+    }
+  }
+}
