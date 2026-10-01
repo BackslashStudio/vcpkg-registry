@@ -22,8 +22,9 @@ vcpkg_from_github(
 
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
-        freetype SEXTANT_USE_FREETYPE
-        png      SEXTANT_USE_LIBPNG
+        freetype    SEXTANT_USE_FREETYPE
+        png         SEXTANT_USE_LIBPNG
+        window-icon SEXTANT_WINDOW_ICON
 )
 
 vcpkg_cmake_configure(

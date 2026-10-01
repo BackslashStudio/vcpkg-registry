@@ -17,7 +17,8 @@
   ],
   "default-features": [
     "freetype",
-    "png"
+    "png",
+    "window-icon"
   ],
   "features": {
     "freetype": {
@@ -34,6 +35,9 @@
       "dependencies": [
         "libpng"
       ]
+    },
+    "window-icon": {
+      "description": "Give every window the sextant icon in the title bar and taskbar (Windows, Linux X11)"
     }
   }
 }
