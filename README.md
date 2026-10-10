@@ -48,5 +48,7 @@ To drop a default feature, list the ones you keep with `"default-features": fals
 
 On Linux, sextant's GLFW needs the X11 and Wayland development headers from the system:
 `libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libxext-dev libwayland-dev
-libxkbcommon-dev wayland-protocols` (Debian/Ubuntu names).
+libxkbcommon-dev wayland-protocols` (Debian/Ubuntu names). To export PNGs with no display at all (a
+container, CI, SSH), install `libegl1` and Mesa (`libegl-mesa0`) at run time; sextant loads them when
+needed and otherwise falls back to a hidden window.
 

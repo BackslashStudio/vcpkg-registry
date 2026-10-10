@@ -2,7 +2,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO BackslashStudio/sextant
     REF "v${VERSION}"
-    SHA512 0
+    SHA512 4ad69dc7b3e7ed5daafec568eb2a2c51f842432187d6190eb2e66fc8b86313521737b791c0e75531b3b57e382115697c7976923215edd75abd64197b2bd58c05
     HEAD_REF main
 )
 
