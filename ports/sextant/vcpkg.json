@@ -1,6 +1,6 @@
 {
   "name": "sextant",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Scientific plotting for C++20 with the low friction of matplotlib: interactive OpenGL windows, PNG and SVG output.",
   "homepage": "https://github.com/BackslashStudio/sextant",
   "license": "MIT",
@@ -37,7 +37,7 @@
       ]
     },
     "window-icon": {
-      "description": "Give every window the sextant icon in the title bar and taskbar (Windows, Linux X11)"
+      "description": "Give every window the sextant icon in the title bar and taskbar (Windows, Linux X11) and the Dock (macOS)"
     }
   }
 }
